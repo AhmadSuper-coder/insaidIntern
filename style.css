@@ -1,0 +1,316 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    width:100%;
+    height: 60px;
+    align-items: center;
+    visibility: visible;
+    
+}
+
+.header {
+    display: none;
+}
+
+.logo{
+    width:20%;
+    text-align: center;
+}
+
+.logo ,h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    width:60%;
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-left:10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+ul a {
+    text-decoration: none;
+    color:black;
+}
+
+.auth {
+    width:20%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.auth p{
+    margin-left:15px;
+}
+
+
+.menu {
+    display: none;
+}
+
+
+
+/* nav bar ends here  */
+
+
+.hero {
+    border:1px solid green;
+    height: 82vh;
+    width:100%;
+    background:linear-gradient(rgba(14, 87, 108, 0.7),rgba(59, 5, 5, 0.6)),url("./images/hero1.jpg");
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero .hero_content {
+    margin-bottom:50px;
+    text-align: center;
+}
+
+.hero .hero_content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:40px;
+    padding: 8px;
+}
+
+.hero .hero_content p {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+.hero .hero_content button {
+    margin-top:20px;
+    padding:10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: green;
+    border-radius:10%;
+    border:none;
+    opacity:0.7;
+}
+
+.hero .hero_content button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+
+
+/* hero section ends here */
+
+
+.service {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.service .shead {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service .shead h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size:30px;
+}
+
+.service .shead p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+
+.service_card {
+    padding:50px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.service_card .card {
+    max-height: 500px;
+    width: 28%;
+}
+
+.service_card .card:hover{
+    box-shadow: 10px 10px 10px 5px;
+    background-color: rgba(4, 52, 65, 0.862);
+    color:white;
+}
+
+
+.service_card .card .img img{
+    /* background-size: cover; */
+    width: 100%;
+    height: 200px;
+}
+
+
+.img_content .title{
+    padding:5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:25px;
+}
+
+.img_content .desc {
+    padding:5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:300;
+    font-size:16px;
+}
+
+.img_content button{
+    margin-top:10px;
+    padding:5px;
+    margin-left:5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: green;
+    border-radius:10%;
+    border:none;
+    opacity:0.9;
+    margin-bottom: 15px;
+}
+
+.img_content button:hover {
+    padding:8px;
+    background-color: rgb(141, 20, 20);
+    color:white;
+    cursor: pointer;
+}
+
+
+/* service end here */
+
+
+
+
+.callNow {
+    padding:25px;
+    background-color: rgb(19, 144, 144);
+    color:red;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+/* callnow ends here  */
+
+
+
+Footer {
+    padding:5px;
+    text-align: center;
+    /* background:linear-gradient(rgba(14, 87, 108, 0.7),rgba(59, 5, 5, 0.6)); */
+}
+
+
+
+
+
+
+
+
+/* tablet mode responsive  */
+@media screen and (max-width: 768px) {
+
+   
+    header {
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    header .logo {
+        margin-top:8px;
+        align-items: center;
+        visibility: visible;
+    }
+
+    header ul {
+        margin-top:40px;
+        margin-top:10px;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0.8;
+        margin:0px;
+        padding-top:10px;
+        background-color: aqua;
+    }
+
+    header ul li {
+        padding:10px;
+        width:100%;
+        text-align: center;
+    }
+
+    header  ul li:hover{
+        width:100%;
+        text-align: center;
+    }
+
+    header .auth {
+        flex-direction: column;
+        background-color: red;
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        left: 25px;
+        top:13px;
+    } 
+   
+
+    
+    .service {
+        padding:10px;
+    }
+
+    .service_card {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .service_card .card{
+        width: 70%;
+        margin-bottom:45px;
+    }
+
+    .service_card .card .img img{
+        height: 250px;
+    }
+
+  }
+
+
+
+
+
+/* mobile mode responsive  */

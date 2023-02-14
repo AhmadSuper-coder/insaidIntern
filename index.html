@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternShip</title>
+    <link rel="stylesheet" href="style.css"  />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;900&display=swap');
+      </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- header section start form here  -->
+        <header id="menubar">
+            <div class="logo">
+                <h1>CLEANS</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- <div class="auth">
+                <p class="login">Login</p>
+                <p class="signup">Signup</p>
+            </div> -->
+
+        </header>
+
+
+        <div class="menu" onclick="displayMenu()">
+            <img src="images/m.png" style="width:30px; height: 30px;" alt="menu">
+        </div>
+
+         <!-- header section end here  -->
+
+
+
+
+        <!-- Hero section start form here  -->
+        <div class="hero">
+            <div class="hero_content">
+                <h1>We help you to keep your place clean</h1>
+                <p>we use specialize and quality equipment tools for cleaning</p>   
+                <button>MEET TEAM</button>
+            </div>
+        </div>
+         <!-- hero section end here  -->
+
+
+
+
+        <!-- service section start here  -->
+        
+        <div class="service">
+            <div class="shead">
+                <h2>Professional Cleaning Service </h2>
+                <p>We Provide Quality Clearning Services</p>
+            </div>
+
+
+            <div class="service_card">
+                <div class="card">
+                    <div class="img">
+                        <img src="/images/service1.jpg" alt="s1">
+                    </div>
+
+                    <div class="img_content">
+                        <div class="title">Office Cleaning</div>
+                        <div class="desc">Professional cleaning services, office cleaning and cleaning contractors. </div>
+                        <button>get service</button>
+                    </div>  
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="/images/service2.jpg" alt="s1">
+                    </div>
+
+                    <div class="img_content">
+                        <div class="title">House Cleaning</div>
+                        <div class="desc">House Cleaning onsectetur terdum vulputate mauris vestibulum ullamcorper eget. </div>
+                        <button>get service</button>
+                    </div>  
+                </div>
+
+
+                <div class="card">
+                    <div class="img">
+                        <img src="/images/service3.jpg" alt="s1">
+                    </div>
+
+                    <div class="img_content">
+                        <div class="title">Commercial Cleaning</div>
+                        <div class="desc">Eleifend etiam scelerisque tortor sed porta ultrices risus nunc eleifend. </div>
+                        <button>get service</button>
+                    </div>  
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+         <!-- service section end here  -->
+
+
+
+
+        <!-- Call now section end here  -->
+
+            <div class="callNow">
+                <h1>Have Any Questions Call us Now: +1800-123-4567</h1>
+            </div>
+
+        <!-- Call now section end here  -->
+
+
+
+        <!-- Footer section end here  -->
+            <Footer>
+                <p> www.cleans.com  &#169; All rights are Reserved</p>
+            </Footer>
+
+        <!-- Footer section end here  -->
+
+
+    </div>
+
+
+
+
+    <script>
+
+        var menubar=document.getElementById("menubar");
+        function displayMenu() {
+          
+        
+
+           if (menubar.style.visibility==="visible"){
+                active=menubar.style.visibility="hidden";
+           }else{
+                active=menubar.style.visibility="visible";
+           }
+
+           console.log(active);
+
+        }
+
+    window.addEventListener("resize", function() {
+    var currentWidth = window.innerWidth;
+    console.log(currentWidth);
+
+    if (currentWidth>768) {
+        menubar.style.visibility="visible";
+    }else{
+        menubar.style.visibility="hidden";
+    }
+    });
+
+    </script>
+
+</body>
+
+</html>

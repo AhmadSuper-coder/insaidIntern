@@ -1,0 +1,235 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    width:100%;
+    height: 60px;
+    align-items: center;
+    visibility: visible;
+    
+}
+
+.header {
+    display: none;
+}
+
+.logo{
+    width:20%;
+    text-align: center;
+}
+
+.logo ,h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    width:60%;
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-left:10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+ul a {
+    text-decoration: none;
+    color:black;
+}
+
+.auth {
+    width:20%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.auth p{
+    margin-left:15px;
+}
+
+
+.menu {
+    display: none;
+}
+
+/* nav bar ends here  */
+
+
+
+
+
+.hero {
+    border:1px solid green;
+    height: 20vh;
+    width:100%;
+    background:linear-gradient(rgba(14, 87, 108, 0.7),rgba(59, 5, 5, 0.6)),url("./images/hero1.jpg");
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero_content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size:20px;
+    padding: 8px;
+}
+
+
+
+.callNow {
+    padding:25px;
+    background-color: rgb(19, 144, 144);
+    color:red;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+/* callnow ends here  */
+
+
+
+
+/* conact page  */
+
+.contact {
+    width:100%;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+Footer {
+    padding:5px;
+    text-align: center;
+    /* background:linear-gradient(rgba(14, 87, 108, 0.7),rgba(59, 5, 5, 0.6)); */
+}
+
+
+
+
+
+
+
+
+/* tablet mode responsive  */
+@media screen and (max-width: 768px) {
+
+   
+    header {
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    header .logo {
+        margin-top:8px;
+        align-items: center;
+        visibility: visible;
+    }
+
+    header ul {
+        margin-top:40px;
+        margin-top:10px;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0.8;
+        margin:0px;
+        padding-top:10px;
+        background-color: aqua;
+    }
+
+    header ul li {
+        padding:10px;
+        width:100%;
+        text-align: center;
+    }
+
+    header ul li:hover{
+        width:100%;
+        text-align: center;
+    }
+
+    /* header .auth {
+        flex-direction: column;
+        background-color: red;
+        width: 100%;
+        opacity: 0.8;
+    } */
+
+    .menu{
+        display: block;
+        position: absolute;
+        left: 25px;
+        top:13px;
+    } 
+   
+
+    .service {
+        padding:10px;
+    }
+
+    .service_card {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .service_card .card{
+        width: 70%;
+        margin-bottom:45px;
+    }
+
+    .service_card .card .img img{
+        height: 250px;
+    }
+
+  }
+
+
+
+
+
+/* mobile mode responsive  */
